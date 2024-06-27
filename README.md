@@ -84,3 +84,8 @@ Note: There should not be a wild card (*) in your statement. You will need to sp
 
 
 NOTE: please write the SQL statement on one line for this lab.
+
+SELECT student.id, student.student_name
+FROM class
+INNER JOIN student ON class.class_title = student.class_title
+WHERE class.teacher_name = 'Ms. Lovelace';
